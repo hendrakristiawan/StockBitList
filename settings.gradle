@@ -1,2 +1,6 @@
+include ':libraries'
+include ':features'
+include ':commons'
+include ':core'
 include ':app'
 rootProject.name = "StockBitList"

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">StockBitList</string>
+    <string name="title_core">core</string>
+    <string name="title_commons">commons</string>
+    <string name="title_features">features</string>
+    <string name="title_libraries">libraries</string>
 </resources>
