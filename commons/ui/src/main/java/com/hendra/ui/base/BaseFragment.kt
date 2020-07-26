@@ -1,37 +1,33 @@
 package com.hendra.ui.base
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 
-abstract class BaseFragment<V : ViewDataBinding, T : ViewModel>(
+abstract class BaseFragment<T : ViewModel>(
     @LayoutRes
     private val layoutId: Int
 ) : Fragment() {
 
-    lateinit var viewBinding: V
     lateinit var viewModel: T
 
-    abstract fun initDataBinding()
+    abstract fun onInitDependencyInjection()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewBinding = DataBindingUtil.inflate(inflater, layoutId, container, false)
-        viewBinding.lifecycleOwner = viewLifecycleOwner
-        return viewBinding.root
+        return inflater.inflate(layoutId, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initDataBinding()
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        onInitDependencyInjection()
     }
 }
