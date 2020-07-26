@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_button">Login with Google</string>
+    <string name="facebook_button">Login with facebook</string>
+    <string name="or_label">or</string>
+    <string name="hint_email_label">Username or Email</string>
+    <string name="hint_password_label">Password</string>
+    <string name="forgot_password_label">Forgot Password</string>
+    <string name="login_label">Login</string>
+    <string name="login_finger_print_label">Login with Fingerprint</string>
+    <string name="sign_up_label">Sign up</string>
+    <string name="dont_have_account_label">Do not have any account? </string>
+</resources>
