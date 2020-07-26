@@ -1,12 +1,15 @@
 package com.hendra.stockbitlist
 
 import android.app.Application
-import com.hendra.stockbitlist.
+import android.content.Context
+import com.hendra.core.di.CoreComponent
 
 class App : Application() {
-    lateinit var coreComponent : CoreC
-    companion object{
-
+    lateinit var coreComponent: CoreComponent
+    companion object {
+        fun coreComponent(context: Context) {
+            (context.applicationContext as App).coreComponent
+        }
     }
     override fun onCreate() {
         super.onCreate()
