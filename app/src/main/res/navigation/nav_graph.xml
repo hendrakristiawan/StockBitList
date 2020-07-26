@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hendra.stockbitlist.LoginFragment"
+        android:label="LoginFragment"
+        app:moduleName="login">
+        <action
+            android:id="@+id/action_loginFragment_to_watchListFragment"
+            app:destination="@id/watchListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/watchListFragment"
+        android:name="com.hendra.stockbitlist.WatchListFragment"
+        android:label="WatchListFragment"
+        app:moduleName="home_list" />
 </navigation>

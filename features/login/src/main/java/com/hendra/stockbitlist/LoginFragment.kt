@@ -13,4 +13,5 @@ class LoginFragment : BaseFragment<LoginViewModel>(layoutId = R.layout.login_fra
             .build()
             .inject(this)
     }
+
 }
