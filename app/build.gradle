@@ -22,7 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    dynamicFeatures = [':core', ':commons', ':features', ':features:login', ':features:home_list']
+    dynamicFeatures = [':core', ':commons:ui', ':features:login', ':features:home_list']
 }
 
 dependencies {
