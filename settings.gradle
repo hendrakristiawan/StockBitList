@@ -1,6 +1,6 @@
 include ':features:home_list'
 include ':features:login'
-include ':commons'
+include ':commons:ui'
 include ':core'
 include ':app'
 rootProject.name = "StockBitList"
