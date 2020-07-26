@@ -3,5 +3,6 @@
     <string name="title_core">core</string>
     <string name="title_commons">commons</string>
     <string name="title_features">features</string>
-    <string name="title_libraries">libraries</string>
+    <string name="title_login">login</string>
+    <string name="title_home_list">home list</string>
 </resources>

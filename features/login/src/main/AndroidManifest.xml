@@ -1,9 +1,9 @@
 <manifest xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.hendra.libraries">
+    package="com.hendra.login">
 
     <dist:module
         dist:instant="false"
-        dist:title="@string/title_libraries">
+        dist:title="@string/title_login">
         <dist:delivery>
             <dist:on-demand />
         </dist:delivery>

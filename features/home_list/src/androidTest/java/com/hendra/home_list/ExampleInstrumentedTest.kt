@@ -1,4 +1,4 @@
-package com.hendra.libraries
+package com.hendra.home_list
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Test

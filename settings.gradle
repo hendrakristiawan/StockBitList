@@ -1,5 +1,5 @@
-include ':libraries'
-include ':features'
+include ':features:home_list'
+include ':features:login'
 include ':commons'
 include ':core'
 include ':app'
